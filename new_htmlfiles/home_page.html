@@ -89,6 +89,43 @@
     th {
       background-color: #f4f4f4;
     }
+
+    /* Added Help Section Styles */
+    .support-section {
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .support-section h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .help-options {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+
+    .option {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 16px;
+      color: #222;
+    }
+
+    .option .icon {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: green;
+    }
+
+    .option .distance {
+      color: green;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
@@ -100,11 +137,13 @@
 
   <div class="main-container">
     <div class="welcome">Welcome, <span id="username">User</span>!</div>
+    
     <div class="content">
       <div class="balance-box">
         <h3>Balance</h3>
         <p id="balance">$0.00</p>
       </div>
+
       <div class="transactions-box">
         <h3>Transactions</h3>
         <table>
@@ -123,6 +162,26 @@
         </table>
       </div>
     </div>
+
+    <!-- How can we help section -->
+    <div class="support-section">
+      <h2>How can we help?</h2>
+      <div class="help-options">
+        <div class="option">
+          <div class="icon">🛒</div>
+          <p>Open an account</p>
+        </div>
+        <div class="option">
+          <div class="icon">📍</div>
+          <p>Locations<br><span class="distance">0.64 mi</span></p>
+        </div>
+        <div class="option">
+          <div class="icon">💬</div>
+          <p>Contact us</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <script>
